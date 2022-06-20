@@ -12,6 +12,7 @@ import LoginFunction from './pages/LoginFunction';
 import ClassRef from './pages/ClassRef'
 import StateRise from './pages/StateDemo'
 import PropCom from './pages/PropCom'
+import UniqueObjects from './pages/UniqueObjects'
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <li><Link to="/hooks/classRef">Class Ref </Link></li>
           <li><Link to="/hooks/stateRise">State Rise </Link></li>
           <li><Link to="/hooks/sendProps">Send component by props </Link></li>
+          <li><Link to="/uniqueObjects">Object-Array unique </Link></li>
         </ul>
 
         <div style={{ margin: 10, padding: 10, border: "1px solid gray", float: "right", width: "70%" }}>
@@ -40,6 +42,7 @@ function App() {
           <Route path="/hooks/classRef" component={ClassRef} />
           <Route path="/hooks/stateRise" component={StateRise} />
           <Route path="/hooks/sendProps" component={PropCom} />
+          <Route path="/uniqueObjects" component={UniqueObjects} />
         </div>
       </Router>
     </div>
