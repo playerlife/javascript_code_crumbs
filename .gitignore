@@ -106,4 +106,5 @@ dist
 # tony added on 0620
 build
 /dist
+/dist/**
 /.vscode
