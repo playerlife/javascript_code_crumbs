@@ -103,7 +103,7 @@ dist
 # TernJS port file
 .tern-port
 
-# production
+# tony added on 0620
 build
 /dist
 /.vscode
