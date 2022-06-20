@@ -104,5 +104,6 @@ dist
 .tern-port
 
 # production
+build
 /dist
 /.vscode
