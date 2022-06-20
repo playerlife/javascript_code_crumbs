@@ -1,7 +1,7 @@
 import React from 'react';
 
 /**
- * 属性中传组件
+ *  passing component in properties
  */
 
 function Pane(props) {

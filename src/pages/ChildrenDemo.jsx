@@ -6,8 +6,7 @@ import React, { useEffect } from 'react';
 class Demo1 extends React.Component {
 
     componentDidMount() {
-        // console.log(this.props.children);
-        // React.Children 提供了用于处理 this.props.children 不透明数据结构的实用方法
+        // React.Children 
        const s =  React.Children.map(this.props.children,  (child) =>{
             return <li>{child}</li>;
         })
@@ -17,7 +16,8 @@ class Demo1 extends React.Component {
     }
 
     render() {
-        // 每个组件都可以获取到 props.children。它包含组件的开始标签和结束标签之间的内容
+        // each component can get props.children,
+        //  it contains the content between start tag and end tag
         return (
             <div style={{ border: '2px solid blue', padding: 10 }}>
                 this is demo1
@@ -30,7 +30,6 @@ class Demo1 extends React.Component {
 function Demo2(props) {
 
     useEffect(() => {
-        //   console.log(props.children );
     })
 
     return (

@@ -50,14 +50,14 @@ class Node3 extends React.Component {
 }
 
 export class Son extends React.Component {
-    // 类变量
+    // class variable
     static childStaticVar = 'sssss';
 
     constructor(props) {
         super(props);
 
         this.state = { 'childName': 'zzzzz' };
-        // 实例变量
+        // instance variable
         this.name = 123;
         // init callback function in constructor
         if (this.props.onRef) {
@@ -99,7 +99,7 @@ class Father extends React.Component {
 
 
     static staticFunction = () => {
-        console.log(this) // static方法中的this是Father类本身
+        console.log(this) // stick to Father class 
         console.log(this.user); // undefined;
         console.log(this.staticVar); // 123;
         console.log(this.state); // undefined;

@@ -36,8 +36,7 @@ export default class LoginDemo extends React.Component {
         console.log(state, props, 'setState');
         return { bigTitle: "new ", smallTitle: "creat new title" }
       })
-
-      // this.forceUpdate();
+      this.forceUpdate();
     }, 1000)
 
 
