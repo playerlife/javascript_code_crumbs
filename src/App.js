@@ -13,7 +13,8 @@ import ClassRef from './pages/ClassRef'
 import StateRise from './pages/StateDemo'
 import PropCom from './pages/PropCom'
 import UniqueObjects from './pages/UniqueObjects'
-
+import LimitNumbers from './pages/LimitNumbers'
+import LoopRemoteFileStatus from './pages/LoopRemoteFileStatus'
 
 function App() {
   return (
@@ -30,6 +31,8 @@ function App() {
           <li><Link to="/hooks/stateRise">State Rise </Link></li>
           <li><Link to="/hooks/sendProps">Send component by props </Link></li>
           <li><Link to="/uniqueObjects">Object-Array unique </Link></li>
+          <li><Link to="/regLimitNumber">限制输入数字 </Link></li>
+          <li><Link to="/loopRemoteStatus">轮询服务器文件状态 </Link></li>
         </ul>
 
         <div style={{ margin: 10, padding: 10, border: "1px solid gray", float: "right", width: "70%" }}>
@@ -43,6 +46,8 @@ function App() {
           <Route path="/hooks/stateRise" component={StateRise} />
           <Route path="/hooks/sendProps" component={PropCom} />
           <Route path="/uniqueObjects" component={UniqueObjects} />
+          <Route path="/regLimitNumber" component={LimitNumbers} />
+          <Route path="/loopRemoteStatus" component={LoopRemoteFileStatus} />
         </div>
       </Router>
     </div>
